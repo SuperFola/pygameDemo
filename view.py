@@ -22,4 +22,5 @@ class View:
         # affiche de la map
         for y in range(self.level.get_map_size()[1]):
             for x in range(self.level.get_map_size()[0]):
-                surface.blit(self.level.sprites[self.level.get_block_at(x, y)], (x * TILE_SIZE, y * TILE_SIZE))
+                tile_code = self.level.get_block_at(x, y)
+                surface.blit(self.level.sprites[tile_code], (x * TILE_SIZE, y * TILE_SIZE))
