@@ -69,3 +69,7 @@ class Main:
 # affichage sur l'écran :
 # self.window.blit(text, pos)
 # pos est un tuple ou une liste de 2 éléments, x et y
+
+if __name__ == '__main__':
+    menu = Main()
+    menu.run()
